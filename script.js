@@ -72,7 +72,7 @@ function doorOpen() {
     setTimeout(() => { document.getElementById("dorr").src = "Images/door.png"; }, 2000);
   }
   else {
-    window.open('https://bertry.repl.co/numbed.html', '_blank');
+    window.open('numbed.html', '_blank');
   }
 }
 function naeDoor() {
@@ -93,7 +93,7 @@ function naeDoor() {
     setTimeout(() => { ape.src = "Images/door.png"; }, 1500);
   }
   else {
-    window.open('https://bertry.repl.co/book.html', '_blank');
+    window.open('book.html', '_blank');
   }
 }
 function showIB() {
