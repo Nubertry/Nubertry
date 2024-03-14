@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'ZCOOL KuaiLe';
+    src: url('zcoolfont/ZCOOLKuaiLe-Regular.woff2') format('.woff2'),
+        url('zcoolfont/ZCOOLKuaiLe-Regular.woff') format('woff');
+}
+:root {
+ --main: #214150;
+ --main2: #3b5c61;
+ --bg: #121e30;
+ --bg2: #1a3140;
+ --bordo: #afaea7;
+ --texto: #f9fae2;
+ --texhov: #fdfcf1;
+ --mainfont: 'ZCOOL KuaiLe', arial, 'sans-serif';
+}
+body {
+ background-color: var(--bg);
+}
+.e-head {
+  margin: 0 auto;
+	width: 100%;
+	height: 100px;
+  background-image: url("Images/bannerbear.png");
+	display: flex;
+  align-items: center; 
+	justify-content: space-around; 
+	position: sticky;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+  border-radius: 10px;
+}
+#bearlogo {
+display:flex;
+width: 100px; 
+height: 100px;
+}
+.useless  {
+width: 200px;
+border-style: solid;
+border-width: 3px;
+border-color: var(--bordo);
+background-color: var(--main);
+color: var(--texto);
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: var(--mainfont);
+font-size: 16px;
+margin: 5px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+}
+.useless:hover  {
+background-color: var(--main2);
+color: var(--texhov);
+}
+.actdog  {
+width: 175px;
+border-style: solid;
+border-width: 3px;
+border-color: var(--bordo);
+background-color: var(--main);
+color: var(--texto);
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: var(--mainfont);
+font-size: 16px;
+margin: 5px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+}
+.actdog:hover  {
+background-color: var(--main2);
+color: var(--texhov);
+}
+.musitog  {
+width: 200px;
+border-style: solid;
+border-width: 3px;
+border-color: var(--bordo);
+background-color: var(--main);
+color: var(--texto);
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: var(--mainfont);
+font-size: 16px;
+margin: 5px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+}
+.musitog:hover  {
+background-color: var(--main2);
+color: var(--texhov);
+}
+.cards{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+  background: var(--main);
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--bordo);
+  transition-duration: 0.5s;
+}
+
+.card img{
+  width: 100%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card .work-content{
+	text-align: center;
+  align-self: flex-end;
+	padding: 10px 5px;
+	font-size: 1.5rem;
+	color: var(--texto);
+  font-family: var(--mainfont);
+	cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.card a{
+	text-decoration: none;
+}
+
+.card .work-content:hover{
+color: var(--texhov);
+background: var(--main2);
+transition-duration: 0.5s;
+}
+
+.card:hover{
+  background: var(--main2);
+  transition-duration: 0.5s;
+}
+.aligndoor{
+	display: flex; 
+	flex: 1;
+  flex-wrap: wrap;
+  justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+#dorr {
+  display: flex;
+	flex-direction: column;
+  cursor: pointer;
+  margin: 50px;
+}
+#knobb {
+  display: flex;
+	flex-direction: column;
+  cursor: pointer;
+  margin: 50px;
+}
+#naenae {
+position: absolute;
+display: none;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 50%;
+border-style: solid;
+border-width: 3px;
+border-color: var(--bordo);
+}
+#IBCards {
+  display: none;
+  	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+    animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main2);
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

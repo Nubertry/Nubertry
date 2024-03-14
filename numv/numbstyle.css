@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'ZCOOL KuaiLe';
+    src: url('zcoolfont/ZCOOLKuaiLe-Regular.woff2') format('.woff2'),
+        url('zcoolfont/ZCOOLKuaiLe-Regular.woff') format('woff');
+}
+:root {
+ --main: #214150;
+ --main2: #3b5c61;
+ --bg: #121e30;
+ --bg2: #1a3140;
+ --bordo: #afaea7;
+ --texto: #f9fae2;
+ --texhov: #fdfcf1;
+ --mainfont: 'ZCOOL KuaiLe', arial, 'sans-serif';
+}
+body {
+background-color: #123;
+}
+.body2 {
+ background-image: url("/numv/numbroom.gif");
+ background-color: #123;
+ background-size: 1400px 700px;
+}
+.body3 {
+background-color: #123;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#muical {
+width: 200px;
+border-style: solid;
+border-width: 3px;
+border-color: var(--bordo);
+background-color: var(--main);
+color: var(--texto);
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: var(--mainfont);
+font-size: 42px;
+margin: 5px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 5px;
+}
+#muical:hover  {
+background-color: var(--main2);
+color: var(--texhov);
+}

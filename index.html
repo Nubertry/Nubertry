@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+  <link rel="manifest" href="/Favicons/site.webmanifest">
+  <link rel="mask-icon" href="/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/Favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/Favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Bertry</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js">
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+  </script>
+</head>
+
+<body>
+
+  <audio id="bloop" src="/Images/bloom.mp3"></audio>
+  <img id="funydog" class="funydog" src="Images/epicdogtransparent.png"
+    style="position:absolute;display:none;z-index: 10;" width="125px" height="125px">
+
+  <header class="e-head">
+    <a href="https://bertry.repl.co"><img id="bearlogo" class="bearlogo" src="Images/epicbearlogool.png"></a>
+    <button class="useless" onclick="beUseless(9)">useless button</button>
+    <button class="useless" onclick="beUseless2()">useful button</button>
+    <button class="actdog" onclick="dogChase()">funny dog</button>
+    <button class="musitog" onclick="rooPer()">music toggle</button>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <a href="https://always-chillin.bertry.repl.co/" target="_blank">
+        <!--Link to project-->
+        <div class="work-content">
+          <img class="card-img" src="Images/catsungnew.png">
+          Always Chillin
+        </div>
+      </a>
+    </div>
+    <div class="card" onclick="showIB()">
+      <div class="work-content">
+        <img class="card-img" src="Images/InFolder.png">
+        In Browser
+      </div></a>
+    </div>
+    <div class="card">
+      <a href="https://project-bling.bertry.repl.co/" target="_blank">
+        <!--Link to project-->
+        <div class="work-content">
+          <img class="card-img" src="Images/blinglogonew.png">
+          Project Bling
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="cards">
+    <section id="IBCards">
+      <div class="card">
+        <a href="https://chrome.bertry.repl.co/" target="_blank">
+          <!--Link to project-->
+          <div class="work-content">
+            <img class="card-img" src="Images/chromiumlogonew.png">
+            Chromium
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://mine.bertry.repl.co" target="_blank">
+          <!--Link to project-->
+          <div class="work-content">
+            <img class="card-img" src="Images/MCLogo.png">
+            Minecraft
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://firefox.bertry.repl.co/" target="_blank">
+          <!--Link to project-->
+          <div class="work-content">
+            <img class="card-img" src="Images/FireFoxlogonew.png">
+            Firefox
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="aligndoor">
+    <img src="Images/door.png" id="dorr" onclick="doorOpen()" />
+    <button class="useless"
+      onclick="window.location.href='https://downgit.github.io/#/home?url=https://github.com/Nubertry/G4RF13LD';">garf
+      button</button>
+    <img src="Images/door.png" id="knobb" onclick="naeDoor()" />
+  </div>
+  <video id="naenae" loop>
+    <source src="Images/naenaefrog.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+
+</html>
